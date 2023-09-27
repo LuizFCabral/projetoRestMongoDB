@@ -7,16 +7,22 @@ Content-Type: application/json
 
 ###
 // GET - lista um registro pelo id
-GET {{baseURL}}/64ff2674c60419442f48c8b5
+GET {{baseURL}}/65141a8e79cfd3550e7994b2
+Content-Type: application/json
 
 ###
-// GET - lista um registro pela razão social
-GET {{baseURL}}/razao/maria
+// GET - lista um registro pela nome social
+GET {{baseURL}}/nome/marina
+Content-Type: application/json
+
+###
+// GET - lista registros que estejam entre um min e um max de dentes
+GET {{baseURL}}/dentes/10/28
 Content-Type: application/json
 
 ###
 // DELETE - Apaga um registro pelo id
-DELETE {{baseURL}}/64ff2674c60419442f48c8b5
+DELETE {{baseURL}}/65141a8e79cfd3550e7994b2
 Content-Type: application/json
 
 ###
@@ -25,15 +31,11 @@ POST {{baseURL}}
 Content-Type: application/json
 
 {
-    "cnpj": "13254635166123",
-    "razao_social": "Serginho Gavião",
-    "cnae_fiscal": 452610,
-    "nome_fantasia": "SugiroKimimame",
-    "data_inicio_atividade": "2020-08-01",
-    "localizacao": {
-        "type": "Point",
-        "coordinates":[-23.2904, -47.2963]
-    }
+    "nome": "João Pedro JP.",
+    "altura": "1.8",
+    "signo": "Libra",
+    "data_nasc": "2000-09-27",
+    "qtd_dentes": "28"
 }
 
 ###

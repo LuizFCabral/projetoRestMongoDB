@@ -1,6 +1,6 @@
 use('FatecItu')
 
-db.prestadores.insertOne({
+db.pessoa.insertOne({
     "nome": "Roberto Justos de Almeida",
     "altura": "1,7",
     "signo": "Leão",
@@ -11,10 +11,14 @@ db.prestadores.insertOne({
 
 use('FatecItu')
 
-db.prestadores.insertOne({
-    "nome": "Mariea Helena H.",
+db.pessoa.insertOne({
+    "nome": "Marina Helena H.",
     "altura": "1,62",
     "signo": "Peixes",
     "data_nasc": "2001-03-15",
     "qtd_dentes": "27",
 })
+
+use('FatecItu')
+
+db.pessoa.find()
